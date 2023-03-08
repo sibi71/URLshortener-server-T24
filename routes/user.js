@@ -36,7 +36,7 @@ router.post("/signup",async(req,res)=>{
         html:`
         <div>
         <strong>${req.body.name}</strong> we welcome to our platform.
-        <a href="https://gentle-maamoul-45fa1c.netlify.app/user/verify/${token}">Verify Email </a>
+        <a href="https://master--loquacious-dusk-ba2882.netlify.app/user/verify/${token}">Verify Email </a>
         <div>
         <p>Thanks and Regards</p>
         <p> From URLShort Team </p>
