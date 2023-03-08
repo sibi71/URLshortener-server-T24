@@ -36,7 +36,7 @@ router.post("/signup",async(req,res)=>{
         html:`
         <div>
         <strong>${req.body.name}</strong> we welcome to our platform.
-        <a href="http://localhost:3000/user/verify/${token}">Verify Email </a>
+        <a href="https://gentle-maamoul-45fa1c.netlify.app/user/verify/${token}">Verify Email </a>
         <div>
         <p>Thanks and Regards</p>
         <p> From URLShort Team </p>
@@ -123,7 +123,7 @@ router.post("/fwd", async (req,res)=>{
             html:`
             <div>
             we welcome to our platform.
-            <a  href="http://localhost:3000/reset/:${req.body.email}">Reset Password..</a>
+            <a  href="https://gentle-maamoul-45fa1c.netlify.app/reset/:${req.body.email}">Reset Password..</a>
             <div>
             <p>Thanks and Regards</p>
             <p> From Short URL Team </p>

@@ -25,21 +25,16 @@ router.get("/data",async(req,res)=>{
 
 
 router.get("/delete/:did",async(req,res)=>{
-//     await Url.findByIdAndDelete({_id:req.params.id},(data,err)=>{
-//     if(err){
-//         res.json({msgerr:err});
-//     }
-//     res.json({msg:"remove"});
-//    })
+
 const delid = req.params.did
-// const delid = false
+
 const url = await Url.findByIdAndDelete(delid)
 if(url){
     res.json({msg:"ok"})
 }else{
     res.json({msg:"no data"})
 }
-// res.json({msg:req.params.id})
+
  
     
   
